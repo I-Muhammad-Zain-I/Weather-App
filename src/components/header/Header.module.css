@@ -1,0 +1,146 @@
+.header {
+    background-color: var(--blueGray-2);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 1em;
+    width: 100%;
+}
+.header__title {
+    font-family: 'Outfit';
+    letter-spacing: 6.5px;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+.header__nav {
+    width: 100%;
+}
+.nav__nav-list {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid wheat;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 0.5rem 0;
+    border-radius: 15px;
+}
+.nav__nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.header__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.profile__name {
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}
+.header__figure div{
+    background-color: aliceblue;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .header {
+        padding: 0.5em 2em;
+    }
+    .header__title {
+        font-size: 2rem;
+    }
+    /* .header__nav {
+       
+    }
+    .nav__nav-list {
+
+    }
+    .nav__nav-list li a {
+       
+    }
+    .header__profile {
+
+    }
+    .profile__name {
+
+    } */
+    .header__figure div {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+    .header {
+        
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+       
+       
+    }
+    .header__title {
+        font-size: 2.3rem;
+        width: 35%;
+    }
+    .header__nav {
+        width: 30%;
+    }
+    .nav__nav-list {
+        flex-direction: row;
+        width: 100%;
+        border: none;
+    }
+    .nav__nav-list li a {
+        font-size: 16px;
+    }
+    .header__profile {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header {
+        padding: 0.5em 3em;
+    }
+    .header__title  {
+        font-size: 2.5rem;
+       
+    }
+    .nav__nav-list li a {
+        
+    }
+    .header__profile {
+        width: 20%;
+    }
+    .profile__name {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header {
+        padding: 0.5em 3.5em;
+    }
+    .header__title {
+        font-size: 3rem;
+    }
+}

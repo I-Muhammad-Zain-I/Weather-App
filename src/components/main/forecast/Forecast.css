@@ -1,0 +1,63 @@
+.weather-forecast {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin: 1.25em 0;
+}
+
+.forecast {
+    border: 2px solid var(--blueGray-2);
+    margin-top: 3rem;
+    /* padding: 1.5rem; */
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+.forecast__dropdown-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.day-dropdown {
+
+}
+.day-dropdown__select, .para-dropdown__select {
+    border: none;
+    outline: none;
+
+    padding: 0 30px 0 15px;
+    width: fit-content;
+    background-color: var(--accentBlue-2);
+    font-size: 18px;
+    color: white;
+    transition: all 0.5s ;
+    padding: 0.3rem 1rem;
+    border-radius: 15px;
+}
+
+
+.chart-wrapper {
+    /* width: 90%; */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+.chart-wrapper canvas {
+    /* height: 350px; */
+}
+
+@media screen and (min-width: 768px) {
+  
+    
+    
+}
+@media screen and (min-width: 992px) {
+    .forecast {
+        padding: 1rem;
+    }
+    .chart-wrapper {
+        width: 90%;
+    }
+    .forecast__dropdown-wrapper {
+        gap: 0.5rem
+    }
+}

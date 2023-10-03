@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Noto+Sans&family=Outfit&display=swap');
+
+/*=== Color Styles ===*/
+:root {
+    font-family: 'sans-serif';
+
+    --blueGray-1: #111827;
+    --blueGray-2: #1F2937;
+    --blueGray-3: #242B3A;
+    --gray-1: #C9CBCF;
+    --gray-2: #393F4D;
+    --accentBlue-1: #1048BF;
+    --accentBlue-2: #0094FF;
+
+        
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+}
+#root {
+    width: 100%;
+}
+html {
+    background-color: var(--blueGray-1);
+    width: 100%;
+}
+/*=== Font Styles ===*/
+
+/** Noto Sans*/
+.noto-h1-48 {
+    font-family: 'Noto Sans';
+    font-size: 3rem;
+    
+}
+.noto-h2-31 {
+    font-family: 'Noto Sans';
+    font-size: 1.95rem;
+}
+.noto-h3-25 {
+    font-family: 'Noto Sans';
+    font-size: 1.5625rem;
+    letter-spacing: 1px;
+}
+.noto-h4-20 {
+    font-family: 'Noto Sans';
+    font-size: 1.25rem;
+}
+.noto-h5-16 {
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+}
+
+/** Aleo */
+.aleo-h4-20 {
+    font-family: 'aleo';
+    font-size: 1.25rem;
+}
+.aleo-h5-16 {
+    font-family: 'aleo';
+    font-size: 1rem;
+}
+
+/** Outfit */
+.outfit-h3-25 {
+    font-family: 'outfit';
+    font-size: 1.5625rem;
+}
+.outfit-h4-20 {
+    font-family: 'outfit';
+    font-size: 1.25rem;
+}
+.outfit-h5-16 {
+    font-family: 'outfit';
+    font-size: 1rem;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        width: 80%;
+    }
+}

@@ -1,0 +1,14 @@
+.map-wrapper {
+    width: 100%;
+    border: 2px solid var(--blueGray-2);
+    border-radius: 25px;
+    margin-top: 3rem;
+}
+
+.leaflet-container {
+    height: 500px;
+    width: 90%;
+    margin: 3rem auto;
+    
+    
+}

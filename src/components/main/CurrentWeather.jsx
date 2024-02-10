@@ -8,10 +8,6 @@ import { DUMMY_MAIN_DATA, DUMMY_FACTOR_DATA } from '../../constants/constant';
 const CurrentWeather = (props) => {
 
     const {unit:{unit}} = useContext(UnitContext)
-
- 
-
-
     const [mainData, setMainData] = useState(DUMMY_MAIN_DATA);
     const [factorData, setFactorData] = useState(DUMMY_FACTOR_DATA)
     useEffect(() => {

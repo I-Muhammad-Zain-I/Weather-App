@@ -46,10 +46,10 @@
 }
 .coord-input {
     all: unset;
-    padding: 0.5em 0;
+    padding: 0.5em 0.2em;
     background-color: var(--blueGray-2);
     border-radius: 16px;
-    text-align: center;
+    
     color: white;
     caret-color: white;
     border: 1px solid var(--blueGray-2);

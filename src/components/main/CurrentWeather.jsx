@@ -4,30 +4,12 @@ import { getCurrentWeatherData } from '../../api/openWeatherMap'
 import WeatherFactors from './WeatherFactors';
 import './main.css'
 import UnitContext from '../../context/UnitContext';
-
+import { DUMMY_MAIN_DATA, DUMMY_FACTOR_DATA } from '../../constants/constant';
 const CurrentWeather = (props) => {
 
     const {unit:{unit}} = useContext(UnitContext)
 
-    const DUMMY_MAIN_DATA = {
-        id: 721,
-        description: "haze",
-        temp_normal: 37.94,
-        temp_max: 37.94,
-        temp_min: 37.94,
-        temp_feelsLike: 37.29,
-        sunrise: '6:30 AM',
-        sunset: '8:10 PM'
-    }
-    const DUMMY_FACTOR_DATA = {
-        wind: {
-            speed: 4.63,
-            degree: 250,
-        },
-        pressure: 1006,
-        visibility: 5000,
-        humidity:  23
-    }
+ 
 
 
     const [mainData, setMainData] = useState(DUMMY_MAIN_DATA);

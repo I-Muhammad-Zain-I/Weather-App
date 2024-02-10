@@ -42,44 +42,9 @@ const BackgroundImage = (props) => {
         backImage = (props.id[props.id.length - 1] === 'd') ? `url(${Sky})` : `url(${Night})`
     }
 
-  
-
-    // let category = props.id.toString()[0];
-
-    // if (props.id == 721) {
-    //     backImage  = `url(${Haze})`;
-    // } else if(props.id < 800 || props.id == '800n' || props.id == '800d') {
-    //     switch (category) {
-    //         case '2':
-    //             backImage = `url(${Thunder})`;
-    //             break;
-    //         case '3':
-    //         case '5':
-    //             backImage = `url(${Rain})`;
-    //             break;
-    //         case '6':
-    //             backImage = `url(${Snow})`;
-    //             break;
-    //         case '8':
-    //             if(category[category.length - 1] == 'd') {
-    //                 backImage = `url(${Sky})`;
-    //             } else {
-    //                 backImage = `url(${Night})`;
-    //             }
-    //         default:
-    //             backImage = `url(${Fog})`;
-    //             break;
-    //     }
-    // } else if (props.id > 800) {
-    //     backImage = `url(${Clouds})`;
-    // } 
-
-
     const backgroundStyle = {
         backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.3), rgba(0,0,0,0)), linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0)), ${backImage}`,
     }
-
-    
 
     return (
         <section 

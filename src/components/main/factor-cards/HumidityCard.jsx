@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
+import FactorCard from '../FactorCard';
+import humidity from '../../../assets/FactorIcons/Humidity.svg';
+import HorizontalStatusBar from './HorizontalStatusBar';
 
-import FactorCard from '../FactorCard'
-import humidity from '../../../assets/FactorIcons/Humidity.svg'
-import HorizontalStatusBar from './HorizontalStatusBar'
 const HumidityCard = (props) => {
     const MAX_HUM = 100;
     let widthPercentage = (props.humidity / MAX_HUM) * 100

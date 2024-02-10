@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { secondaryFindUrl } from '../../../api/iconsUrl';
+import { secondaryFindUrl } from '../../../utils/iconsUrl';
 import {
     Chart as ChartJS,
     CategoryScale,

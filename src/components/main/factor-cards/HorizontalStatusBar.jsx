@@ -1,12 +1,5 @@
 import React from 'react'
 
-
-/**
- * TODO:
- * Take orientation in props: Vertical OR Horizontal
- * Take Label 1, 2, 3 for status
- */
-
 const HorizontalStatusBar = (props) => {
 
 

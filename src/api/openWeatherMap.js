@@ -1,5 +1,5 @@
 import axios from "axios"
-import { transformCurrentWeatherData, transformWeatherForecastData } from "./transformer";
+import { transformCurrentWeatherData, transformWeatherForecastData } from "../utils/transformer";
 
 const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 

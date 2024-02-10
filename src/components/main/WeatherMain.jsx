@@ -1,5 +1,5 @@
 import React, {useContext} from 'react'
-import findUrl from '../../api/iconsUrl';
+import findUrl from '../../utils/iconsUrl';
 import BackgroundImage from './BackgroundImage';
 import  './main.css'
 import UnitContext from '../../context/UnitContext';

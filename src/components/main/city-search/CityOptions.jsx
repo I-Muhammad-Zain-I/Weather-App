@@ -3,18 +3,23 @@ import './citySearch.css'
 const CityOptions = (props) => {
   const [selectedOption, setSelectedOption] = useState("");
 
-  const citySelectHandler = (coords) => {
-    props.onCitySelect(coords)
+  const citySelectHandler = (e) => {
+    console.log(props?.cities[e.target?.value].coords);
+    props.onCitySelect(props?.cities[e.target?.value].coords)
   }
+
+
+
   return (
-    <select value={selectedOption} onChange={(e) => onChange(e)} className='method-menu__select'>
+    <select value={selectedOption} onChange={(e) => citySelectHandler(e)} className='method-menu__select-city'>
       {
-        props.cities.map((city) => 
+        props.cities.map((city, index) => 
           <option 
-            value={`${city.name}, ${city.country}`}
-            onClick={() => citySelectHandler(city.coords)}
+            key={index}
+            value={`${index}`}
+            
           >
-            {city.name}, {city.country}
+            {city.country}, {city.city}, 
           </option>
         )
       }

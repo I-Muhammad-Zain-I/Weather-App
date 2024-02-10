@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, LayersControl, Marker, Popup } from 'react-lea
 import osm from '../../../services/osm-providers';
 import './map.css';
 import 'leaflet/dist/leaflet.css'
-
 const API_KEY_2 = import.meta.env.VITE_REACT_APP_API_KEY;
 
 const WeatherMap = (props) => {
@@ -13,6 +12,7 @@ const WeatherMap = (props) => {
   const mapRef = useRef();
   useEffect(() => {
     setPosition({ lat: props.coords.lat, lng: props.coords.lon });
+  
   }, [props.coords, mapRef]);
 
   return (
@@ -26,7 +26,7 @@ const WeatherMap = (props) => {
           url={osm.maptiler.url}
           attribution={osm.maptiler.attribution}
         />
-        <Marker position={position}>
+        <Marker position={position}> 
           <Popup>
             Your Location
           </Popup>

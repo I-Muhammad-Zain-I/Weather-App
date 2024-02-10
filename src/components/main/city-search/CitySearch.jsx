@@ -38,8 +38,8 @@ const CitySearch = (props) => {
         </button>
       </form>
       {
-        cities ? <CityOptions cities={cities} onCitySelect={onCitySelect} /> :
-          <p className='no-results'>No Results Found</p>
+        cities.length !== 0 ? <CityOptions cities={cities} onCitySelect={onCitySelect} /> :
+          <p className='no-results'>No Results found!</p>
       }
 
     </section>

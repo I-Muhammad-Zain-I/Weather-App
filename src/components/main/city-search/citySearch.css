@@ -39,9 +39,7 @@
 }
 
 .city__list {
-  color: var(--gray-2);
-  list-style-type: none;
-  width: fit-content;
+ 
 }
 .city-list-item {
   margin-top: 4px;
@@ -49,4 +47,16 @@
 .city-list-item:hover {
   cursor: pointer;
   color: var(--gray-1);
+}
+
+.method-menu__select-city {
+  
+  color: var(--gray-2);
+  list-style-type: none;
+  width: fit-content;
+
+}
+.no-results {
+  color: white;
+
 }

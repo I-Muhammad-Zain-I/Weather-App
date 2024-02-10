@@ -38,7 +38,7 @@ const MethodMenu = (props) => {
       locationData={props.locationData} />
   }
   else if (selectedOption === "citySearch") {
-    method = <CitySearch setCoordinateHandler = {setCoordinateHandler}/>
+    method = <CitySearch setCoordinateHandler={setCoordinateHandler} />
   }
   return (
     <section className='method-menu'>

@@ -13,14 +13,14 @@ import HumidityCard from './factor-cards/HumidityCard';
  */
 
 const WeatherFactors = (props) => {
-    return (
-        <section className='factor-container'>
-            <WindCard wind={props.data.wind}/>
-            <PressureCard pressure={props.data.pressure}/>
-            <VisibilityCard visibility={props.data.visibility}/>
-            <HumidityCard humidity={props.data.humidity}/>
-        </section>
-    )
+  return (
+    <section className='factor-container'>
+      <WindCard wind={props.data.wind} />
+      <PressureCard pressure={props.data.pressure} />
+      <VisibilityCard visibility={props.data.visibility} />
+      <HumidityCard humidity={props.data.humidity} />
+    </section>
+  )
 }
 
 export default WeatherFactors

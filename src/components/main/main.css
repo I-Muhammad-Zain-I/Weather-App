@@ -17,9 +17,7 @@
 .info__country {
     color: white;
 }
-.info__loc-img {
 
-}
 .location__form {
     display: flex;
     flex-direction: column;
@@ -148,9 +146,7 @@
     justify-content: space-between;
     
 }
-.main-info__icon-container {
 
-}
 .icon-container__weather-icon {
 
     /*// width: 100px; */
@@ -561,9 +557,7 @@ option:hover {
         width: 30%;
        
     }
-    .weather-card {
-
-    }
+   
     .icon-container__weather-icon {
         width: 120px;
         height: 120px;
